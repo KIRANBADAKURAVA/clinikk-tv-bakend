@@ -1,4 +1,4 @@
-import { AsyncHandler } from "../utils/Asynchandler.js";
+import {AsyncHandler} from '../utils/asynchandler.js'
 import { Playlist } from "../models/playlists.model.js";
 import { ApiError } from "../utils/ApiError.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
