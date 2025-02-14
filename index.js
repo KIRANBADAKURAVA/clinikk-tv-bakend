@@ -11,9 +11,11 @@ dotenv.config({
 connectDB()
 .then(()=>{
    
-    app.listen(process.env.PORT,()=>{
-        console.log('listioning ', process.env.PORT);
-    } )
+    const PORT = process.env.PORT || 3000; // Add this line
+
+    app.listen(PORT, () => {
+      console.log(`Server running on port ${PORT}`); // Update this line
+    });
    
 })
 .catch((error )=>(console.error('Error in conneting server at intdex.js file ',   error)))
