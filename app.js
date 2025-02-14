@@ -6,7 +6,7 @@ const app = express()
 
 // cors 
 app.use(cors({
-    
+    origin: "https://clinnik-tv-frontend-k6fn.vercel.app/",
     credentials: true
 }))
 
