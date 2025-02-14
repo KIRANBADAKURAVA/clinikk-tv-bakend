@@ -6,9 +6,10 @@ const app = express()
 
 // cors 
 app.use(cors({
-    origin: "https://clinnik-tv-frontend-k6fn.vercel.app/",
-    credentials: true
-}))
+    origin: "*", // Allow all origins
+    methods: ["GET", "POST", "PUT", "DELETE"], // Explicitly allow methods
+    allowedHeaders: ["Content-Type", "Authorization"] // Specify allowed headers
+  }));
 
 //json 
 app.use(express.json({
